@@ -33,7 +33,7 @@ userRoutes.get("/users", async (req, res) => {
     const dbquery: any = {};
     try{
         const client = await getClient();
-        const results = await client.db()
+        const results = await client.db("Project_3")
         .collection<User>('users')     // define some interface here 
         .find(dbquery).toArray();
         if(results.length === 0) {
