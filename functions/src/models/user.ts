@@ -4,12 +4,20 @@
 // in case we need to switc
 // import { ObjectId } from "bson";
 import { ObjectId } from 'mongodb';
+import Preferences from './preferences';
 
 export default interface User {
     _id?: ObjectId;
     firstname: string;
     lastname: string;
-
+    email: string;
+    phone?: string;
+    password1: string;
+    image?: string;
+    zip: string;
+    aboutme?: string;
+    preferences?: Preferences;
+    petList?: string[];
 };
 
 
