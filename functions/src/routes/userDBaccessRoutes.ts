@@ -3,8 +3,9 @@ import express from "express";
 
 import { getClient } from "../db";
 import User from "../models/user";
-import { OptionalId  } from "mongodb";  // for production
-//import { ObjectId, OptionalId  } from "mongodb";  // for testing purposes only
+
+import { ObjectId, OptionalId  } from "mongodb";  // for testing purposes only
+//import { OptionalId  } from "mongodb";  // for production
 //import { ObjectId } from "mongodb"; // for testing purposes only
 // create a new Router object
 const userRoutes = express.Router();
